@@ -33,24 +33,27 @@ const ParallaxGrid = () => {
           className="absolute inset-0"
           style={{
             backgroundImage: `
-              linear-gradient(to right, hsl(0 0% 20% / 0.15) 1px, transparent 1px),
-              linear-gradient(to bottom, hsl(0 0% 20% / 0.15) 1px, transparent 1px)
+              linear-gradient(to right, hsl(0 0% 25% / 0.25) 1px, transparent 1px),
+              linear-gradient(to bottom, hsl(0 0% 25% / 0.25) 1px, transparent 1px)
             `,
-            backgroundSize: "80px 80px",
+            backgroundSize: "60px 60px",
           }}
         />
         
-        {/* Dot pattern overlay */}
+        {/* Larger grid overlay */}
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `radial-gradient(circle, hsl(0 0% 30% / 0.3) 1px, transparent 1px)`,
-            backgroundSize: "40px 40px",
+            backgroundImage: `
+              linear-gradient(to right, hsl(0 0% 30% / 0.15) 1px, transparent 1px),
+              linear-gradient(to bottom, hsl(0 0% 30% / 0.15) 1px, transparent 1px)
+            `,
+            backgroundSize: "180px 180px",
           }}
         />
       </div>
 
-      {/* Secondary floating dots - even slower */}
+      {/* Secondary grid layer - even slower parallax */}
       <div
         className="absolute inset-0 w-full"
         style={{
@@ -62,9 +65,11 @@ const ParallaxGrid = () => {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `radial-gradient(circle, hsl(0 0% 40% / 0.2) 2px, transparent 2px)`,
-            backgroundSize: "120px 120px",
-            backgroundPosition: "20px 20px",
+            backgroundImage: `
+              linear-gradient(to right, hsl(0 0% 35% / 0.08) 2px, transparent 2px),
+              linear-gradient(to bottom, hsl(0 0% 35% / 0.08) 2px, transparent 2px)
+            `,
+            backgroundSize: "300px 300px",
           }}
         />
       </div>
