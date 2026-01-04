@@ -7,6 +7,7 @@ import PhilosophySection from "@/components/PhilosophySection";
 import AboutSection from "@/components/AboutSection";
 import TimelineSection from "@/components/TimelineSection";
 import Footer from "@/components/Footer";
+import ParallaxGrid from "@/components/ParallaxGrid";
 
 const Index = () => {
   return (
@@ -14,8 +15,8 @@ const Index = () => {
       {/* Custom Cursor */}
       <CustomCursor />
       
-      {/* Animated Grid Background */}
-      <div className="grid-background" />
+      {/* Parallax Grid Background */}
+      <ParallaxGrid />
       
       {/* Scanline Overlay */}
       <div className="scanline-overlay" />
