@@ -14,6 +14,9 @@ const Index = () => {
       {/* Custom Cursor */}
       <CustomCursor />
       
+      {/* Animated Grid Background */}
+      <div className="grid-background" />
+      
       {/* Scanline Overlay */}
       <div className="scanline-overlay" />
       
